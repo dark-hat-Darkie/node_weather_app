@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const got = require('got');
 const { kelvinToCelsius } = require('./util/functions');
 const app = express();
+const port = process.env.PORT || 3000
 
 // Setting up express directory config
 const publicDirPath = path.join(__dirname, '../public');
@@ -81,6 +82,6 @@ app.get('*', (req, res) => {
     res.render('404page', { thing: 'Page'});
 });
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log('Server is up on port ' + port);
 });
