@@ -1,0 +1,47 @@
+
+.nav-title {
+    color: #333;
+    text-align: center;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    background: green;
+}
+
+.nav-link a {
+    text-decoration: none;
+    min-width: 100px;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.nav-link a:hover {
+    background-color: lightgreen;
+    color: #333;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 2rem;
+}
+
+.body{
+    flex-grow: 1;
+}
+
+.footer{
+    text-align: center;
+    background: #333;
+    padding: 1rem;
+    color: white;
+}
+
+img {
+    max-width: 200px;
+}
